@@ -99,3 +99,10 @@
     font-weight: bolder;
     text-align: center;
 }
+
+#mobileworkable{
+    height: 30px;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+}
