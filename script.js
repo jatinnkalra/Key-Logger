@@ -33,12 +33,13 @@ function release() {
 
 let starth = document.querySelector(".start");
 let stoph = document.querySelector(".stop");
-
+let statush = document.querySelector(".status");
 // when start loggin button is cliked this will call press and release function which add event lister to keep record of keys
 // when start loggin button is cliked this will call press and release function which add event lister to keep record of keys
 
 starth.addEventListener("click" , ()=>{
     starth.disabled = true;
+    statush.textContent = "Status : Logging" 
     press();
     release();
 })
@@ -52,6 +53,7 @@ stoph.addEventListener("click" , ()=>{
     document.removeEventListener("keydown" , keyPress);
     document.removeEventListener("keyup" , keyRelease);
     starth.disabled = false;
+    statush.textContent = "Status : Not Logging" 
 })
 
 
